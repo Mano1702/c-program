@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+ #define size 25
+ int i,count=0;
+ char name[size];
+ scanf("%s",name);
+ printf("name=%s\n",name);
+ for(i=0;name[i]!='0';i++)
+ if(name[i]=='a')
+ count++;
+ printf("total a's=%d\n",count);
+ }
+
