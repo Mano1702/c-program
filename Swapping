@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main()
+{
+    int j,temp,i,count=0;
+    int a[9]={6,0,8,2,3,0,4,0,1};
+    
+    for(i=0;i<9;i++)
+    {
+        if(a[i]==0)
+        {
+            count++;
+        }
+    }
+    printf("\nnum of zero is %d\n",count);
+   
+  
+       for(i=0;i<9;i++)
+       {
+           for(j=i+1;j<9;j++)
+           {
+             if(a[i]==0)
+            {
+              temp=a[i];
+              a[i]=a[j];
+              a[j]=temp;
+            }
+            }
+       }
+   
+   
+   for(i=0;i<9;i++)
+   {
+   printf("\n%d ",a[i]);
+   }  
+
+    return 0;
+}
+
