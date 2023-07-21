@@ -1,0 +1,76 @@
+#include<stdio.h>
+int main()
+{
+   int i,j,r=5,c=5,n;
+  
+     int a[5][5]={{1,2,3,4,5},{6,7,8,9,10},{11,12,13,14,15},{16,17,18,19,20},{21,22,23,24,25}};
+    for(i=0;i<r;i=i+1)
+    {
+        for(j=0;j<c;j++)
+        {
+            printf("%d ",a[i][j]);
+        }
+        printf("\n");
+    }
+    
+    printf("spiral view\n");
+     
+    i=0;
+        for(j=0;j<c;j++)
+        {
+            printf("%d ",a[i][j]);
+        }
+
+         for(i=1;i<r;i=i+1)
+       {
+           j=c-1;
+            printf("%d ",a[i][j]);
+        }
+       n=1;
+
+      i=r-n;
+        for(j=c-2;j>=0;j--)
+        {
+            printf("%d ",a[i][j]);
+        }
+        n++;
+        if(r==3)
+        {
+         i=r-n;
+        for(j=0;j<c-1;j++)
+        {
+            printf("%d ",a[i][j]);
+        }
+        }
+        else if(r>=4)
+        {
+            for(i=r-n;i>=1;i--)
+            {
+          printf("%d ",a[i][0]);
+            }n++;
+            i=r-n;
+         for(j=1;j<=c-2;j++)
+            {
+                
+          printf("%d ",a[i][j]);
+            }
+            n--;
+            i=r-n;
+             for(j=c-2;j>=1;j--)
+            {
+                
+          printf("%d ",a[i][j]);
+            }
+            
+        }
+        
+       
+    
+        
+    
+    
+    
+    
+    return 0;
+}
+
