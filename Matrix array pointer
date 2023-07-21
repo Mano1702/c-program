@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+    int a[][2]={{1,2},{3,4}};
+    int *p;
+    p=&a[0][0];
+    for(p=&a[0][0];p!=&a[1][2];p++)
+    {
+        printf("%d ",*p);
+        
+    }
+}
