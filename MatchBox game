@@ -1,0 +1,68 @@
+#include <stdio.h>
+int matches(int m);
+int main()
+{
+int N,i,a,b,s,r,n;
+int k=0;
+printf("Enter the no of inputs\n");
+scanf("%d",&N);
+for(i=1;i<=N;i++)
+{
+    printf("Enter the value of A and B\n");
+    scanf("%d%d",&a,&b);
+    s=a+b;
+    
+    while (s>0)
+    {
+        r=s%10;
+        s=s/10;
+        n=matches(r);
+        k=n+k;
+    }
+    printf("\nNo of matches %d\n",k);
+    k=0;
+}
+
+}
+
+int matches(int m)
+{
+    int n;
+    switch(m)
+    {
+        case 0:
+        n=6;
+        break;
+        case 1:
+        n=2;
+        break;
+        case 2:
+        n=5;
+        break;
+        case 3:
+        n=5;
+        break;
+        case 4:
+        n=4;
+        break;
+        case 5:
+        n=5;
+        break;
+        case 6:
+        n=6;
+        break;
+        case 7:
+        n=3;
+        break;
+        case 8:
+        n=7;
+        break;
+        case 9:
+        n=6;
+        break;
+        default:
+            break;
+    }
+    return n;
+}
+
