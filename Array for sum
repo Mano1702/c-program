@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+    int i, sum=0;
+    int mark[5];
+    printf("Enter the marks; ")
+    for (i=0;i<5;i++)
+    {
+        scanf ("%d",&mark[i]);
+    }
+    for(i=0;i<5;i++)
+    {
+        sum=sum+mark [i];
+    }
+    printf ("sum is %d",sum);
+    
+}
+
