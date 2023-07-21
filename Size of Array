@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+ char arr[6];
+ int n;
+ n= sizeof(arr)/sizeof(arr[3]);
+ printf("%d",n);
+ 
+
+    return 0;
+}
+
