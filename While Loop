@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+     int i;
+     printf("enter the number ");
+     scanf("%d",&i);
+     while(i>0)
+   {  i=i/5;
+   printf("Number is %d ",i);
+   } 
+}
+
