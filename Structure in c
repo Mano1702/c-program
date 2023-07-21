@@ -1,0 +1,48 @@
+#include<stdio.h>
+struct student{
+int regno;
+char name[30];
+char address[40];
+int mark[10];
+float cgpa;
+
+}s1,s2;
+
+int main()
+{
+    int i;
+    printf("STUDENT 1\n");
+    scanf("%d",&s1.regno);
+    scanf("%s",s1.name);
+    scanf("%s",s1.address);
+    for(i=0;i<5;i++)
+    {
+        scanf("%d",&s1.mark[i]);
+    }
+    scanf("%f",&s1.cgpa);
+
+    printf("STUDENT 2\n");
+    scanf("%d",&s2.regno);
+    scanf("%s",s2.name);
+    scanf("%s",s2.address);
+    for(i=0;i<5;i++)
+    scanf("%d",&s2.mark[i]);
+    scanf("%f",&s2.cgpa);
+
+    printf("%d\n",s1.regno);
+    printf("%s\n",s1.name);
+    printf("%s\n",s1.address);
+    for(i=0;i<5;i++)
+    {
+         printf("%d\n",s1.mark[i]);
+    }
+    printf("%f\n",s1.cgpa);
+    printf("%d\n",s2.regno);
+    printf("%s\n",s2.name);
+    printf("%s\n",s2.address);
+  for(i=0;i<5;i++)
+    {
+         printf("%d\n",s2.mark[i]);
+    }
+    printf("%f\n",s2.cgpa);
+}
