@@ -1,0 +1,50 @@
+#include <stdio.h>
+int main()
+{
+    int r,c,i,j,a[10][10],sum=0;
+    printf("enter the no of rows and column\n");
+    scanf("%d%d",&r,&c);
+    for(i=0;i<r;i++)
+    {
+        for(j=0;j<c;j++)
+        {
+            scanf("%d",&a[i][j]);
+        }
+    }
+    printf("given matrix\n");
+    
+    for(i=0;i<r;i++)
+    {
+        for(j=0;j<c;j++)
+        {
+            printf("%d  ",a[i][j]);
+        }
+        printf("\n");
+        
+    }
+    printf("Upper triangular matrix\n\n");
+       
+       for(i=0;i<r;i++)
+    {
+        for(j=i+1;j<c;j++)
+        {
+            printf("%d  ",a[i][j]);
+            sum=sum+a[i][j];
+        }
+        printf("\n");
+        
+    }
+    printf("sum of upper triangular elements is %d",sum);
+     
+        if(r==c)
+        {
+            printf(" the no of elements in upper triangular matrix %d  ",r* (r-1)/2);
+        }
+        
+                printf("\n");
+
+    
+
+
+    return 0;
+}
