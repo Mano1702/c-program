@@ -1,0 +1,24 @@
+#include <stdio.h>
+int natural(int num);
+void main()
+{
+  int num=10;
+  printf("%d",natural(num));
+}
+int natural(int num)
+{
+     
+    if(num!=0)
+    {
+       printf("%d ",num);
+        return natural(num-1);
+        
+    }
+    else
+    {
+       
+        return 1;
+    }
+    
+}
+
