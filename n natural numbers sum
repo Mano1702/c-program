@@ -1,0 +1,17 @@
+#include <stdio.h>
+int natural(int i);
+int main()
+{
+	int num;
+	printf("enter natural numbers: ");
+	scanf("%d",&num);
+	printf("sum is %d",natural(num));
+	return 0;
+}
+int natural(int i)
+{
+	if(i!=0)
+	return i+natural(i-1);
+	else
+	return i;
+}
