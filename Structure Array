@@ -1,0 +1,40 @@
+#include<stdio.h>
+struct student{
+int regno;
+char name[30];
+char address[40];
+int mark[10];
+float cgpa;
+
+}s[100];
+
+int main()
+{
+        int i,j,n;
+        printf(" Enter the no of students: ");
+        scanf("%d",&n);
+    for(j=0;j<n;j++)
+    {
+    printf("STUDENT %d\n",j+1);
+    scanf("%d",&s[j].regno);
+    scanf("%s",s[j].name);
+    scanf("%s",s[j].address);
+    for(i=0;i<5;i++)
+    {
+        scanf("%d",&s[j].mark[i]);
+    }
+    scanf("%f",&s[j].cgpa);
+}
+for(j=0;j<n;j++)
+    {    printf("STUDENT %d\n",j+1);
+    printf("%d\n",s[j].regno);
+    printf("%s\n",s[j].name);
+    printf("%s\n",s[j].address);
+    for(i=0;i<5;i++)
+    {
+         printf("%d\n",s[j].mark[i]);
+    }
+    printf("%f\n",s[j].cgpa);
+  
+    }
+}
