@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+void main()
+{ char name;
+    char a[3][10]={"mano","nithish","dinesh"};
+    for(int i=0;i<3;i++)
+    {
+        printf("%s ",a[i]);
+    }
+    printf("Enter the name");
+    scanf("%s",&name);
+      
+    for(int i=0;i<3;i++)
+    {
+      
+    if( int strcmp(name,a[i])==0)
+    {
+        printf("%d",i);
+    }
+    }
+}
