@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main ()
+{
+	int inttype;
+	float floattype;
+	double doubletype;
+	char chartype;
+	long double longdoubletype;
+	long long longlongtype;
+	long int longinttype;
+	
+	printf("size of int   :%zu bytes\n",sizeof (inttype));
+	printf("size of float  :%zu bytes\n",sizeof (floattype));
+	printf("size of double :%zu bytes\n",sizeof (doubletype));
+  printf("size of char  :%zu bytes\n",sizeof (chartype));
+  printf("size of long double:%zu bytes\n",sizeof (longdoubletype));
+  printf("size of long long :%zu bytes\n",sizeof (longlongtype));
+  printf("size of long int  :%zu bytes\n",sizeof (longinttype));
+}
