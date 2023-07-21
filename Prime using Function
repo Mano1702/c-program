@@ -1,0 +1,36 @@
+#include<stdio.h>
+int prime(int s,int e);
+int main()
+{
+    int s,e;
+    printf("enter the starting and ending interval ");
+    scanf("%d%d",&s,&e);
+    prime(s,e);
+}
+
+int prime(int s,int e)
+{
+    int i,j,flag=0;
+    for(i=s;i<=e;i++)
+    {
+        flag=0;
+        for(j=2;j<i;j++)
+        {
+            if(i%j==0)
+            {
+                flag=1;
+                break;
+            }
+            else
+            {
+                flag=0;
+            }
+            
+        }
+        if(flag==0)
+        {
+            printf("%d\n",i);
+        }
+    }
+}
+
