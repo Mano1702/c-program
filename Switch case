@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main()
+{
+char i;
+printf("Enter your choice\n");
+scanf("%c",&i);
+ switch(i)
+ {
+     case 'a':
+     printf("sunday");
+     break;
+      case 'b':
+     printf("monday");
+     break;
+      case 'c':
+     printf("tuesday");
+     break;
+      case 'd':
+     printf("wednesday");
+     break;
+      case 'e':
+     printf("thursday");
+     break;
+      case 'f':
+     printf("friday");
+     break;
+      case 'g':
+     printf("saturday");
+     break;
+     default:
+     printf("Enter correct choice");
+     break;
+ }
+    return 0;
+}
+
+
